@@ -2,8 +2,8 @@
 ## Usage
 - Import the sql file in your database.
 - Change the values in emulator_settings
--- "habron.ws.host" to your websocket host. 
--- "habron.ws.port" to your websocket port. 
+"habron.ws.host" to your websocket host. 
+"habron.ws.port" to your websocket port. 
 ### Adding levels
 There is a table called 'habron_levelsystem_levels', you can add here levels as much as u want.
 It has to be in chronological order.
