@@ -9,7 +9,7 @@ There is a table called 'habron_levelsystem_levels', you can add here levels as 
 It has to be in chronological order.
 For example:
 
-Level | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+Level | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
 XP | 100 | 250 | 500 | 1000 | 2000 | 4000 | 5000 | 7500 | 8500 | 9900 | 10000
 
