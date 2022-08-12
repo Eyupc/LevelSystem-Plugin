@@ -38,3 +38,5 @@ id | name | desc |image | type | roomId | XP | item_id | enabled
 You can update this data in game without restarting the emulator.
 
 
+### Contact
+Discord: Eyup#6692
