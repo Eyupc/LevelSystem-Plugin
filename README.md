@@ -5,8 +5,8 @@
 "habron.ws.host" to your websocket host. 
 "habron.ws.port" to your websocket port. 
 ### Adding levels
-There is a table called 'habron_levelsystem_levels', you can add here levels as much as u want.
-It has to be in chronological order.
+There is a table called 'habron_levelsystem_levels', you can add here levels as much as u want.<br/>
+It has to be in chronological order.<br/>
 For example:
 
 Level | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
@@ -17,11 +17,11 @@ So if the user reached 100XP, he will get a level-up (reaches level 2). After th
   
   
 ### Adding tasks
-An example of adding a task. 
-Type = always 'e'. 
-RoomId = Room where the event takes place. 
-Item_id = When a user has the task done, he has to walk on a furniture.
-This id has to be the id of that furni.
+An example of adding a task. <br/>
+Type = always 'e'. <br/>
+RoomId = Room where the event takes place. <br/>
+Item_id = When a user has the task done, he has to walk on a furniture.<br/>
+This id has to be the id of that furni.<br/>
 
 id | name | desc |image | type | roomId | XP | item_id | enabled
 --- | --- | --- | --- |--- |--- |--- |--- |---
