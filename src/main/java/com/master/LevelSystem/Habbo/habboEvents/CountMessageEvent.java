@@ -10,6 +10,10 @@ import com.master.LevelSystem.Player.LevelPlayer;
 public class CountMessageEvent implements EventListener {
     @EventHandler
     public static void CountMessage(UserTalkEvent event){
+        if(event.chatMessage.getMessage().startsWith(":"))
+            return;
+
+
         int roomid = event.habbo.getHabboInfo().getCurrentRoom().getId();
         LevelPlayer player = LevelSystemManager.getOnlinePlayers().get(event.habbo.getHabboInfo().getId());
         if(roomid == Emulator.getTexts().getInt("levelsystem.roomId"))
