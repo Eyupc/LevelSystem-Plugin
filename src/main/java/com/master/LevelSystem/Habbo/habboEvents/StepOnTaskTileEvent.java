@@ -27,7 +27,7 @@ public class StepOnTaskTileEvent implements EventListener {
             if(item == null)
                 return;
 
-            if(item.getY() == ev.toLocation.y && item.getX() == ev.fromLocation.x){
+            if(item.getY() == ev.toLocation.y && item.getX() == ev.toLocation.x){
                 player.getPlayerInfo().addTaskDone(taskx.getId());
                 player.updateTasks();
                 player.getPlayerInfo().addXP(taskx.getXP());
