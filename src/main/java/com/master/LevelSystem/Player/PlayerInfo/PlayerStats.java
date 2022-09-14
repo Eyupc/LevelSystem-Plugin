@@ -40,7 +40,7 @@ public class PlayerStats {
     public void addRespect(int num){
         //this.respects += num;
         int mod = ((this.respects+ num) % 50);
-        if((mod == 0)){
+        if((mod == 0) && this.player != null){
             this.respects+= num;
             this.player.getPlayerInfo().addXP(125);
             this.update();
@@ -52,7 +52,7 @@ public class PlayerStats {
 
     public void addRespectsGiven(int num){
         int mod = ((this.respects_given+ num) % 50);
-        if((mod == 0)){
+        if((mod == 0) && this.player != null){
             this.respects_given+= num;
             this.player.getPlayerInfo().addXP(125);
             this.update();
@@ -64,7 +64,7 @@ public class PlayerStats {
 
     public void addMessagesAmount(int num){
         int mod = ((this.messages_amount+ num) % 1000);
-        if((mod == 0 || mod == 1) && ((this.messages_amount % 1000) != 0)){
+        if((mod == 0 || mod == 1) && ((this.messages_amount % 1000) != 0) && this.player != null){
             this.messages_amount+=num;
             this.player.getPlayerInfo().addXP(100);
             this.update();
@@ -75,7 +75,7 @@ public class PlayerStats {
     }
     public void addOnlineTime(int num){
         int mod = ((this.online_time+ num) % 60);
-        if((mod == 0)){
+        if((mod == 0) && this.player != null){
             this.online_time +=num;
             this.player.getPlayerInfo().addXP(25);
             this.update();
