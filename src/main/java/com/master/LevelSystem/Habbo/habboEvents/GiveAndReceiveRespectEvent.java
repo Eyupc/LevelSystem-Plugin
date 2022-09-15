@@ -9,7 +9,7 @@ import com.master.LevelSystem.Player.LevelPlayer;
 public class GiveAndReceiveRespectEvent implements EventListener {
 
     @EventHandler
-    public static void giveRespect(UserRespectedEvent e){
+    public static void giveRespect(UserRespectedEvent e) throws NullPointerException{
         LevelPlayer Tplayer = LevelSystemManager.getOnlinePlayers().get(e.habbo.getHabboInfo().getId());
         LevelPlayer sender = LevelSystemManager.getOnlinePlayers().get(e.from.getHabboInfo().getId());
         Tplayer.getPlayerStats().addRespect(1);
