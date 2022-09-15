@@ -19,6 +19,9 @@ public class StepOnTaskTileEvent implements EventListener {
 
         LevelPlayer player = LevelSystemManager.getOnlinePlayers().get(ev.habbo.getHabboInfo().getId());
         int roomId = ev.habbo.getHabboInfo().getCurrentRoom().getId();
+        if(player == null)
+            return;
+        
         if(!player.getTasksRoomIds().contains(roomId))
             return;
         else {

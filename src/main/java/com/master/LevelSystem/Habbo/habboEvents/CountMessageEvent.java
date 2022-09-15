@@ -13,7 +13,6 @@ public class CountMessageEvent implements EventListener {
         if(event.chatMessage.getMessage().startsWith(":"))
             return;
 
-
         int roomid = event.habbo.getHabboInfo().getCurrentRoom().getId();
         LevelPlayer player = LevelSystemManager.getOnlinePlayers().get(event.habbo.getHabboInfo().getId());
         if(roomid == Emulator.getTexts().getInt("levelsystem.roomId"))
